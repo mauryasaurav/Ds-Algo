@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 func reverseArray(arr []int) []int {
-	for i, j := 0, len(arr)-1; i < j; i, j = i+1, j-1 {
-		arr[i], arr[j] = arr[j], arr[i]
+	output := []int{}
+	for i := len(arr) - 1; i >= 0; i-- {
+		output = append(output, arr[i])
 	}
-	return arr
+	return output
 }
 
-func main() {
-	fmt.Println(reverseArray([]int{1, 2, 3, 4, 5}))
+func ma	in() {
+	fmt.Println(reverseArray([]int{1, 2, 3, 4, 5, 6, 7, 8}))
 }
