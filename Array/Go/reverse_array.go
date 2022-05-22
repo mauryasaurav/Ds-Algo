@@ -10,6 +10,6 @@ func reverseArray(arr []int) []int {
 	return output
 }
 
-func ma	in() {
+func main() {
 	fmt.Println(reverseArray([]int{1, 2, 3, 4, 5, 6, 7, 8}))
 }
