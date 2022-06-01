@@ -1,13 +1,7 @@
-function reverse_number(n) {
-	let reverse = 0, lastDigit;
-	while (n != 0) {
-		lastDigit = n % 10;
-		reverse = reverse * 10 + lastDigit; // reverse formula
-		n = Math.floor(n/10);
-	  }
+var reverse = function(x) {
+	const absReversed = Math.abs(x).toString().split('').reverse().join('');
+	if (absReversed > 2**31) return 0;
+	return absReversed * Math.sign(x);
+  };
 
-     console.log(reverse, Number.MAX_SAFE_INTEGER)
-}
-
-reverse_number(3234)
-		
+  console.log(reverse(-212112))
