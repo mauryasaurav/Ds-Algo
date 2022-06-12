@@ -2,14 +2,15 @@ package main
 
 import "fmt"
 
-func reverseArray(arr []int) []int {
-	output := []int{}
+func reverseArray(arr string) string {
+	var output string = ""
 	for i := len(arr) - 1; i >= 0; i-- {
-		output = append(output, arr[i])
+		fmt.Println("arr====+", arr[i])
+		output = "a"
 	}
 	return output
 }
 
 func main() {
-	fmt.Println(reverseArray([]int{1, 2, 3, 4, 5, 6, 7, 8}))
+	fmt.Println(reverseArray("abc"))
 }
