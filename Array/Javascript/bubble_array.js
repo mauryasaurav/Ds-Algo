@@ -15,5 +15,5 @@ function arraySort(array) {
     return array;
 }
 
-const array = [10, 32, 3, 4, 5, 7, 1, 4]
+const array = [10, 32, 64, 68, 34, 36]
 console.log(arraySort(array))
